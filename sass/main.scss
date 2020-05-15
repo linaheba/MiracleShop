@@ -95,10 +95,6 @@ body{
       height: 100%;
     }
     .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-
       /* Center slide text vertically */
       display: -webkit-box;
       display: -ms-flexbox;
@@ -114,22 +110,160 @@ body{
       align-items: center;
     }
 
-.swiper-slide{
-	position: relative;
-	a{
-		width: 13rem;
 
-		position: absolute;
-		bottom: 1rem;
-		
-		border-radius: 30px;
-		color: #fff;
-		background-color: $yellow;
-	}
-	a:hover{
-		background-color: #E29D00;
+
+.swipe {
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  
+  cursor: default;
+  background: #fff no-repeat center center
+}
+
+.swipe .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.swipe img {
+  display: block;
+  position: relative
+}
+
+.swipe h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 1.7rem;
+  padding: 1rem;
+  margin: 2rem 0 0 0
+}
+
+.swipe p {
+  font-style: italic;
+  font-size: 1.4rem;
+  position: relative;
+  color: #fff;
+  padding: 0px 2rem 0px;
+  text-align: center
+}
+
+.swipe a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.7rem 1.4rem;
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 0.1rem #000
+}
+
+.swipe a.info:hover {
+  box-shadow: 0 0 0.5rem #000
+}
+
+.swiper-slide img {
+  transition: all 0.2s linear;
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide .mask {
+  opacity: 0;
+  background-color: rgba(255, 182, 18, 0.6);
+  transition: all 0.4s ease-in-out;
+}
+
+.swiper-slide h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-family: Raleway, serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.swiper-slide p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.swiper-slide a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* */
+
+.swiper-slide:hover img {
+  transform: scale(1.1);
+}
+
+.swiper-slide:hover .mask {
+  opacity: 1;
+}
+
+.swiper-slide:hover h2,
+.swiper-slide:hover p,
+.swiper-slide:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.swiper-slide:hover p {
+  transition-delay: 0.1s;
+}
+
+.swiper-slide:hover a.info {
+  transition-delay: 0.2s;
+}
+
+.product{
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	&__item{
+		text-align: center;
+
+		width: 300px;
+		height: auto;
+
+		margin-bottom: 2.5rem;
+		img{
+			width: 100%;
+		}
+		h2{
+			text-transform: uppercase;
+			font-size: 1.7rem;
+			color: #000;
+
+			margin-top: 1rem;
+		}
+		a{
+			color: #fff;
+			font-size: 1.4rem;
+
+			display: block;
+			margin: 0 auto;
+			padding-top: 4px;
+			border-radius: 30px;
+
+			width: 60%;
+			height: 30px;
+			background-color: $yellow;
+
+		}
 	}
 }
+
 
 .address{
 	display: flex;

@@ -6,7 +6,11 @@
 		}
 	}
 }
+.swipe p{
+	display: none;
 }
+}
+
 
 @media (max-width: 767px){
 .stocks{
@@ -18,15 +22,19 @@
 		}
 	}
 }
-.swiper-slide{
-	a{
-		font-size: 14px;
-		width: 10rem;
-		height: 20px;
 
-		bottom: 40%;
-	}
+.popular-product__title{
+	text-align: center;
 }
+
+.swiper-container{
+	display: none;
+}
+
+.product{
+	display: flex;
+}
+
 .address{
 	flex-direction: column;
 	text-align: center;
