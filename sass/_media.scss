@@ -1,0 +1,38 @@
+@media (max-width: 991px){
+.stocks{
+	&__main{
+		img{
+			height: 258px;
+		}
+	}
+}
+}
+
+@media (max-width: 767px){
+.stocks{
+	&__thumb{
+		display: flex;
+		img{
+			margin-bottom: 20px;
+			width: 110.5px;
+		}
+	}
+}
+.swiper-slide{
+	a{
+		font-size: 14px;
+		width: 10rem;
+		height: 20px;
+
+		bottom: 40%;
+	}
+}
+.address{
+	flex-direction: column;
+	text-align: center;
+	&__city{
+		justify-content: center;
+	}
+}
+}
+
