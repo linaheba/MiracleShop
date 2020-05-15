@@ -247,6 +247,7 @@ body {
       color: #000;
       margin-top: 1rem; }
     .product__item a {
+      text-decoration: none;
       color: #fff;
       font-size: 1.4rem;
       display: block;
@@ -256,6 +257,9 @@ body {
       width: 60%;
       height: 30px;
       background-color: #FFB612; }
+    .product__item a:hover {
+      -webkit-box-shadow: 0 0 0.5rem #8EA500;
+              box-shadow: 0 0 0.5rem #8EA500; }
 
 .address {
   display: -webkit-box;

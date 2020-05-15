@@ -248,6 +248,7 @@ body{
 			margin-top: 1rem;
 		}
 		a{
+			text-decoration: none;
 			color: #fff;
 			font-size: 1.4rem;
 
@@ -259,7 +260,9 @@ body{
 			width: 60%;
 			height: 30px;
 			background-color: $yellow;
-
+		}
+		a:hover{
+			box-shadow: 0 0 0.5rem #8EA500;
 		}
 	}
 }
