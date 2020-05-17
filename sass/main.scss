@@ -485,4 +485,72 @@ button:active{
 .login-modal--active{
 		display: block;
 }
+
+.delivery{
+	margin-bottom: 30px;
+	h1{
+		font-size: 36px;
+		font-weight: normal;
+		margin-bottom: 30px;
+	}
+	&__pickup{
+		margin-bottom: 30px;
+		h2{
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 25px;
+		}
+		img{
+			max-width: 200px;
+			height: auto;
+		}
+	}
+	&__courier{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h3{
+			font-size: 18px;
+			font-weight: bold;
+			width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: lighter;
+		}
+	}
+	&__wrapper{
+		flex-direction: column;
+
+	}
+	&__point{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+		h3{
+			font-size: 18px;
+			font-weight: bold;
+			width: 100%;
+			height: auto;
+			
+			margin-bottom: 20px;
+		}
+		p{
+			font-weight: lighter;
+		}
+	}
+	&__payment{
+		h2{
+			text-align: center;
+			font-size: 24px;
+			margin-bottom: 25px;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+		}
+	}
+}
 @import "media";

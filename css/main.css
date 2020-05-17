@@ -429,6 +429,71 @@ button:active {
 .login-modal--active {
   display: block; }
 
+.delivery {
+  margin-bottom: 30px; }
+  .delivery h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 30px; }
+  .delivery__pickup {
+    margin-bottom: 30px; }
+    .delivery__pickup h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 25px; }
+    .delivery__pickup img {
+      max-width: 200px;
+      height: auto; }
+  .delivery__courier {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .delivery__courier h3 {
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+    .delivery__courier p {
+      font-weight: lighter; }
+  .delivery__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .delivery__point {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 20px; }
+    .delivery__point h3 {
+      font-size: 18px;
+      font-weight: bold;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px; }
+    .delivery__point p {
+      font-weight: lighter; }
+  .delivery__payment h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px; }
+  .delivery__payment ul {
+    padding: 0;
+    margin: 0; }
+
 @media (max-width: 991px) {
   .stocks__main img {
     height: 258px; }
