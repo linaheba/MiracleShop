@@ -41,7 +41,7 @@
 					</ul>
 					<div class="nav-user">
 						<button class="nav-btn"><img src="img/svg/market.svg" alt=""></button>
-						<button class="nav-btn"><img src="img/svg/user.svg" alt=""></button>
+						<button class="nav-btn user-btn"><img src="img/svg/user.svg" alt=""></button>
 					</div>
 				</div>
 			</nav>
@@ -138,10 +138,58 @@
 			</section>
 		</main>
 
-		<footer class="main-footer">
-			
+		<footer class="main-footer ">
+			<div class="footer-nav">
+				<div class="container-fluid">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Категории</a></li>
+						<li><a href="">Доставка</a></li>
+					</ul>
+			</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container-fluid wrapper">
+					<div class="footer-social">
+						<p class="title">Соц. Сети</p>
+						<ul class="social-list">
+							<li class="social-item"><a href=""><img src="img/svg/vk.svg" alt=""></a></li>
+							<li class="social-item"><a href=""><img src="img/svg/inst.svg" alt=""></a></li>
+							<li class="social-item"><a href=""><img src="img/svg/e-mail.svg" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="footer-contacts">
+						<p class="title">Контакты</p>
+						<p>+7(952)511-18-23</p>
+						<p>Челябинск: Ул. Чичерина, д. 39: Ул. Кирова, д.15</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 		
+		<div class="login-modal">
+			<div class="modal__content">
+				<h2>Мой кабинет</h2>
+				<div class="modal-close">
+					<button class="m-close"><div class="first"></div>
+						<div class="second"></div></button>
+				</div>
+				<div class="modal__form">
+					<form action="">
+						<p>Логин</p>
+						<input class="text-input login" type="text" placeholder="Ваш логин">
+						
+						<p>Пароль</p>
+						<input class="text-input pass" type="password" placeholder="Ваш пароль">
+						
+						<input class="btn" type="button" value="Войти">
+					
+						<a href="">Забыли пароль?</a>
+						<a href="">Регистрация</a>
+					</form>
+				</div>
+			</div>
+		</div>
 
 
 		<!-- Bootstrap core JavaScript ================================================== -->
@@ -152,6 +200,7 @@
 
 		<script src="js/swiper.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/modal.js"></script>
 
 
 	</body>

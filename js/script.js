@@ -16,3 +16,5 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
   },
 });
+
+document.querySelector('.login-modal').classList.add('login-modal--active');
