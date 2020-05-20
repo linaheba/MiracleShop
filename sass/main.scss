@@ -553,4 +553,57 @@ button:active{
 		}
 	}
 }
+
+.category{
+	display: flex;
+	flex-wrap: wrap;
+
+	margin-bottom: 45px;
+	.btn{
+		margin-right: 3.5rem;
+		font-size: 18px;
+		border: none;
+	}
+	.dropdown{
+		.dropdown-menu{
+			.dropdown-item{
+				font-size: 16px;
+			}
+			.dropdown-item:active{
+				background-color: #FFB612;
+			}
+		}
+		button{
+			background-color: #FF823C;
+		}
+	}
+	.btn-woman{
+		background-color: #3CFFC4;
+	}
+	.btn-man{
+		background-color: #FF3C3C;
+	}
+}
+
+.new-product{
+	&__title{
+		font-size: 2.4rem;
+	}
+	&__list{
+		margin-top: 2rem;
+		text-align: center;
+	}
+	&__item{
+		max-width: 240px;
+		h3{
+			margin-top: 1.5rem;
+			margin-bottom: 1rem;
+		}
+	}
+	img{
+		max-width: 200px;
+		height: auto;
+	}
+
+}
 @import "media";

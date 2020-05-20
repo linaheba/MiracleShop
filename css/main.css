@@ -494,6 +494,42 @@ button:active {
     padding: 0;
     margin: 0; }
 
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 45px; }
+  .category .btn {
+    margin-right: 3.5rem;
+    font-size: 18px;
+    border: none; }
+  .category .dropdown .dropdown-menu .dropdown-item {
+    font-size: 16px; }
+  .category .dropdown .dropdown-menu .dropdown-item:active {
+    background-color: #FFB612; }
+  .category .dropdown button {
+    background-color: #FF823C; }
+  .category .btn-woman {
+    background-color: #3CFFC4; }
+  .category .btn-man {
+    background-color: #FF3C3C; }
+
+.new-product__title {
+  font-size: 2.4rem; }
+.new-product__list {
+  margin-top: 2rem;
+  text-align: center; }
+.new-product__item {
+  max-width: 240px; }
+  .new-product__item h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem; }
+.new-product img {
+  max-width: 200px;
+  height: auto; }
+
 @media (max-width: 991px) {
   .stocks__main img {
     height: 258px; }
