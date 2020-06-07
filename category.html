@@ -71,57 +71,51 @@
 				 </a>
 			</div>
 
-			<div class="new-product">
-				<span class="new-product__title">Новинки</span>
-
-				<div class="new-product__list row justify-content-sm-between">
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
-					</div>
+			<div class="category-product">
+				<span class="category-product__title">Новинки</span>
 					
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
+				<div class="category-product__list row">
+					<div class="category-product__item col-md-3">
+						<a href="product-card__ring.html" class="category-product__wrapper">
+							<img src="img/product/ring/1.jpg" alt="">
+							<div class="category-product__subtitle">
+								<h3>Янтарное кольцо</h3>
+								<p>1999 руб.</p>
+							</div>
+						</a>
 					</div>
 
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
+					<div class="category-product__item col-md-3">
+						<a href="product-card__flash.html" class="category-product__wrapper">
+							<img src="img/product/flash/1.jpg" alt="">
+							<div class="category-product__subtitle">
+								<h3>Флэш-карта</h3>
+								<p>199 руб.</p>
+							</div>
+						</a>
 					</div>
 
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
+					<div class="category-product__item col-md-3">
+						<a href="product-card__helmet.html" class="category-product__wrapper">
+							<img src="img/product/helmet/1.jpg" alt="">
+							<div class="category-product__subtitle">
+								<h3>Шлем виртуальной реальности</h3>
+								<p>15 000 руб.</p>
+							</div>
+						</a>
 					</div>
 
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
+					<div class="category-product__item col-md-3">
+						<a href="product-card__tea.html" class="category-product__wrapper">
+							<img src="img/product/tea/1.jpg" alt="">
+							<div class="category-product__subtitle">
+								<h3>Чайный набор</h3>
+								<p>300 руб.</p>
+							</div>
+						</a>
 					</div>
 
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
-					</div>
-
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
-					</div>
-
-					<div class="new-product__item col-md-3">
-						<img class="new-product__image" src="img/1.jpg" alt="">
-						<h3><a href="">Lorem ipsum.</a></h3>
-						<p>10 $</p>
-					</div>
+					
 
 
 					
@@ -131,7 +125,7 @@
 
 		<footer class="main-footer ">
 			<div class="footer-nav">
-				<div class="container-fluid">
+				<div class="container">
 					<ul>
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="category.html">Категории</a></li>
@@ -140,7 +134,7 @@
 			</div>
 			</div>
 			<div class="bottom-footer">
-				<div class="container-fluid wrapper">
+				<div class="container wrapper">
 					<div class="footer-social">
 						<p class="title">Соц. Сети</p>
 						<ul class="social-list">
@@ -173,10 +167,40 @@
 						<p>Пароль</p>
 						<input class="text-input pass" type="password" placeholder="Ваш пароль">
 						
-						<input class="btn" type="button" value="Войти">
+						<button class="btn" value="Войти">Войти</button>
 					
-						<a href="">Забыли пароль?</a>
-						<a href="registration.html">Регистрация</a>
+						<a href="#">Забыли пароль?</a>
+						<button class="reg-btn">Регистрация</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="reg-modal">
+			<div class="reg-modal__content">
+				<div class="reg-modal-close">
+					<button class="reg-m__close"><div class="first"></div>
+					<div class="second"></div></button>
+				</div>
+			
+				<div class="reg-modal__form ">
+					<form action="" >
+						<p>Ваше имя</p>
+						<input type="text" placeholder="Имя">
+						
+						<p>Ваша Фамилия</p>
+						<input type="text" placeholder="Фамилия">
+						
+						<p>E-mail</p>
+						<input type="text" placeholder="E-mail">
+						
+						<p>Придумайте пароль</p>
+						<input type="password" placeholder="Пароль">
+						
+						<p>Повторите пароль</p>
+						<input type="password" placeholder="Повтор пароля">
+						
+						<button class="btn">Регистрация</button>
 					</form>
 				</div>
 			</div>

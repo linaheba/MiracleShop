@@ -40,39 +40,77 @@
 					
 					</ul>
 					<div class="nav-user">
-						<button class="nav-btn"><img src="img/svg/market.svg" alt=""></button>
+						<button class="nav-btn basket-btn"><img src="img/svg/market.svg" alt=""></button>
 						<button class="nav-btn user-btn"><img src="img/svg/user.svg" alt=""></button>
 					</div>
 				</div>
 			</nav>
 		</header>
 
-		<main>
-			<section class="container reg">
-				<form class="reg-form modal__form" action="">
-					<p>Ваше имя</p>
-					<input type="text" placeholder="Имя">
+		<main class="container">
+			<div class="basket row justify-content-between">
+				<div class="col-md-9">
+					<div class="basket__card">
+						<div class="basket__img">
+							<img src="img/1.jpg" alt="">
+						</div>
+						<div class="basket__card-wrapper">
+							<div class="basket__card-title">
+								<h3>Название</h3>
+								<button class="basket__btn-del">Удалить</button>
+							</div>
+							
+							<div class="basket__card-price">
+								<p>322</p>
+								<div class="number">
+								    <button class="minus">-</button>
+								    <input type="text" value="1" size="3"/>
+								    <button class="plus">+</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
 
-					<p>Ваша Фамилия</p>
-					<input type="text" placeholder="Фамилия">
+				
 
-					<p>E-mail</p>
-					<input type="text" placeholder="E-mail">
+				<div class="basket__side-bar col-md-3">
+					<div class="basket__price">
+						<h3 class="basket__price-title">Товары(1)</h3>
+						<div class="basket__sum">
+							<h3>Всего(р)</h3>
+							<span>322</span>
+						</div>
+					</div>
+					<form class="basket__form justify-content-center" action="">
+						<label for="name">Ваше имя</label>
+						<input type="text" id="name" placeholder="Имя">
 
-					<p>Придумайте пароль</p>
-					<input type="password" placeholder="Пароль">
+						<label for="num">Номер телефона</label>
+						<input type="text" id="num" placeholder="Номер">
+						
 
-					<p>Повторите пароль</p>
-					<input type="password" placeholder="Повтор пароля">
+						<label for="addr">Адрес доставки</label>
+						<input type="text" id="addr" placeholder="Адрес">
+						
 
-					<button class="reg-btn btn">Регистрация</button>
-				</form>
-			</section>
+						<select>
+						  <option>Доставка курьером</option>
+						  <option>Самовывоз</option>
+						</select>
+						<p>Оплата осуществлятся наличными при получении заказа</p>
+
+						<button>Заказать</button>
+					</form>
+				</div>
+			</div>
+
 		</main>
 
 		<footer class="main-footer ">
 			<div class="footer-nav">
-				<div class="container-fluid">
+				<div class="container">
 					<ul>
 						<li><a href="index.html">Главная</a></li>
 						<li><a href="category.html">Категории</a></li>
@@ -81,7 +119,7 @@
 			</div>
 			</div>
 			<div class="bottom-footer">
-				<div class="container-fluid wrapper">
+				<div class="container wrapper">
 					<div class="footer-social">
 						<p class="title">Соц. Сети</p>
 						<ul class="social-list">
@@ -114,10 +152,40 @@
 						<p>Пароль</p>
 						<input class="text-input pass" type="password" placeholder="Ваш пароль">
 						
-						<input class="btn" type="button" value="Войти">
+						<button class="btn" value="Войти">Войти</button>
 					
-						<a href="">Забыли пароль?</a>
-						<a href="">Регистрация</a>
+						<a href="#">Забыли пароль?</a>
+						<button class="reg-btn">Регистрация</button>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="reg-modal">
+			<div class="reg-modal__content">
+				<div class="reg-modal-close">
+					<button class="reg-m__close"><div class="first"></div>
+					<div class="second"></div></button>
+				</div>
+			
+				<div class="reg-modal__form ">
+					<form action="" >
+						<p>Ваше имя</p>
+						<input type="text" placeholder="Имя">
+						
+						<p>Ваша Фамилия</p>
+						<input type="text" placeholder="Фамилия">
+						
+						<p>E-mail</p>
+						<input type="text" placeholder="E-mail">
+						
+						<p>Придумайте пароль</p>
+						<input type="password" placeholder="Пароль">
+						
+						<p>Повторите пароль</p>
+						<input type="password" placeholder="Повтор пароля">
+						
+						<button class="btn">Регистрация</button>
 					</form>
 				</div>
 			</div>
